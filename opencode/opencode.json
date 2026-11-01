@@ -1,0 +1,25 @@
+{
+	"$schema": "https://opencode.ai/config.json",
+	"autoupdate": false,
+	"plugins": ["superpowers@git+https://github.com/obra/superpowers.git"],
+	"agents": {
+		"plan": {
+			"color": "#4E8570"
+		},
+		"build": {
+			"color": "#7096B7"
+		}
+	},
+	"mcp": {
+		"servers": {
+			"exa": {
+				"type": "remote",
+				"url": "https://mcp.exa.ai/mcp?tools=web_search_exa,web_fetch_exa,web_search_advanced_exa,agent_run",
+				"disabled": false,
+				"headers": {
+					"x-api-key": "{env:EXA_API_KEY}"
+				}
+			}
+		}
+	}
+}
